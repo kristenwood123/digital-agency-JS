@@ -9,11 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <!-- styles -->
 <link rel="stylesheet" href="styles.css">
-
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+</style>
 </head>
 <body>
   <!-- Header -->
-  <header>
   <nav class='navbar'>
       <span class="navbar-toggle" id='js-navbar-toggle'>
         <i class="fa fa-bars"></i>
@@ -22,59 +24,146 @@
       <img src="./images/main-logo.png" alt="logo">
     </a>
       <ul class='main-nav' id='js-menu'>
-        <li>
-          <a href="#" class='nav-links'>HOME</a>
-        </li>
-        <li>
-          <a href="#" class='nav-links'>SERVICES</a>
-        </li>
-        <li>
-          <a href="#" class='nav-links'>CONTACT</a>
-        </li>
-        <li>
-          <a href="#" class='nav-links'>ABOUT</a>
-        </li>
-        <li>
-          <a href="#" class='nav-links'>SERVICES</a>
-        </li>
-        <li>
-          <a href="#" class='search'>
-            <i class="fas fa-search" class='nav-links search'></i>
-          </a>
-        </li>
+        <li><a href="#" class='nav-links'>HOME</a></li>
+        <li><a href="#" class='nav-links'>SERVICES</a></li>
+        <li><a href="#" class='nav-links'>CONTACT</a></li>
+        <li><a href="#" class='nav-links'>ABOUT</a></li>
+        <li><a href="#" class='nav-links'>SERVICES</a></li>
+        <li><a href="#" class='search'><i class="fas fa-search" class='nav-links search'></i></a></li>
       </ul>  
   </nav>
-</header>
-<!-- End of header -->
-  <main>
-    <article>
-      <section>
-      <h1>We're a digital agency.</h1>
-      <button class='getting-started'>Getting Started</button>
-      </section>
+<!-- End of Nav -->
+    <div class="main__container">
+      <header>  
+          <hr class="horizontal-line"></hr>
+          <h1>We're a digital<br> agency.</h1>
+        <button class='getting-started'>Getting Started</button>
+      </header>
+      <main>
       <!-- what we do section -->
-      <section>
-
-      </section>
+      <div class='card'>
+        <article>
+          <i class="fas fa-chart-bar"></i>
+          <h1>Future Vision</h1>
+            <div class="underline"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi velit nobis aspernatur eum?</p>
+        </article>
+      </div>
+        <div class='card'>
+          <article>
+            <i class="fas fa-rocket"></i>
+            <h1>Product Design</h1>
+            <div class="underline"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi velit nobis aspernatur eum?</p>
+          </article>
+        </div>
+          <div class='card'>
+            <article>
+              <i class="fas fa-chart-pie"></i>
+              <h1>Great Solution</h1>
+              <div class="underline"></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi velit nobis aspernatur eum?</p>
+            </article>
+          </div>
+          </article>
 
       <!-- services section -->
-      <section>
-      
-      </section>
+          <div class="services">
+            <h1>Services</h1>
+              <h2>WE WORK WITH YOU, NOT FOR YOU</h2>
+                <ul class='services__items'>
+                  <li>
+                    <div class="services__items__container">
+                      <i class="fas fa-bookmark"></i>
+                      <p>Digital Strategy</p>
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="services__items__container">
+                      <i class="fas fa-bookmark"></i>
+                      <p>Content Strategy</p>
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="services__items__container">
+                      <i class="fas fa-pencil-ruler"></i>
+                      <p>UX Design</p>
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="services__items__container">
+                      <i class="fas fa-pencil-ruler"></i>
+                      <p>Brand Identity</p>
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="services__items__container">
+                      <i class="far fa-edit"></i>
+                      <p>Digital Strategy</p>
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="services__items__container">
+                      <i class="far fa-edit"></i>
+                      <p>Digital Strategy</p>
+                      <i class="fas fa-arrow-right"></i>
+                    </div>
+                  </li>
+                </ul>
+            <hr class='vertical-line'></>
+            <hr class='horizontal-line'></>
+          </div>
 
       <!-- about section -->
-      <section>
-      
-      </section>
-    </article>
+        <div class="about">
+          <h2>WE'RE MORE THAN A DIGITAL AGENCY</h2>
+            <section class='grid'>
+              <div class='item-1'>
+                <img src="./images/about_01.jpg" alt="meeting">
+              </div>
+              <div class='item-2'>
+                <img src="./images/about_02.jpg" alt="meeting">
+              </div>
+              <div class='item-3'>
+                <img src="./images/about_03.jpg" alt="meeting">
+              </div>
+            </section>
 
+            <div class='about__text'>
+              <section>
+                <div>
+                  <h2>Who we are</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, iusto fugit. Aperiam at pariatur eos amet blanditiis. Molestiae, mollitia libero.</p>
+                </div>
+                <div>
+                  <h2>Our philosopy</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, iusto fugit. Aperiam at pariatur eos amet
+                    blanditiis. Molestiae, mollitia libero.</p>
+                </div>
+                <div>
+                  <h2>How we work</h2>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, iusto fugit. Aperiam at pariatur eos amet
+                    blanditiis. Molestiae, mollitia libero.</p>
+                </div>
+              </section>
+            </div>
+        </div>
+        <!-- Reviews -->
+        <div class="reviews">
+          <h1>Reviews</h1>
+            <h2>CHECK OUT SOME OF OUR CLIENT REVIEWS</h2>
+        </div>
     <!-- footer -->
     <footer>
-      
+
     </footer>
-
+    </div>
   </main>
-
   <script src='app.js'></script>
 </body>
 </html>

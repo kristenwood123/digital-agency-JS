@@ -1,3 +1,8 @@
+:root {
+  --clr-pink: #e9204f;
+  --font: "Raleway", sans-serif;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 * {
   box-sizing: border-box;
@@ -6,8 +11,13 @@
 }
 
 body {
-  background-color: black;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  background-image: url("./images/hero_02.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  color: white;
 }
 
 .navbar {
@@ -15,6 +25,7 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  background: black;
 }
 
 .main-nav {
@@ -23,7 +34,7 @@ body {
 }
 
 .main-nav li a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
 }
 .main-nav li {
@@ -44,9 +55,10 @@ body {
   right: 35px;
   cursor: pointer;
   font-size: 24px;
-  color: white;
+  /* color: white; */
 }
 
+/* display on smaller screens */
 .active {
   display: block;
 }
@@ -55,29 +67,76 @@ body {
   margin-left: 20px;
 }
 
+header {
+  margin: 10px;
+  margin-top: 80px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+.getting-started {
+  color: black;
+}
+
+.horizontal-line {
+  display: block;
+  border: 2px solid var(--clr-pink);
+  width: 40px;
+  margin-bottom: 30px;
+}
+
+.main__container {
+  margin: 20px;
+  background: orange;
+}
+
+.getting-started {
+  border: 2px solid var(--clr-pink);
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background: black;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+/* bigger screen */
 @media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-    .main-nav {
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .main-nav li {
-        margin: 0;
-    }
-    .nav-links {
-        margin-left: 40px;
-    }
-    .logo {
-        margin-top: 0;
-    }
-   .navbar-toggle {
-       display: none;
-    }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+    color: white;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  /* does not display toggle on larger screens */
+  .navbar-toggle {
+    display: none;
+  }
+}

@@ -1,5 +1,4 @@
 // toggle Navbar
-
 let mainNav = document.getElementById('js-menu')
 let navBarToggle = document.getElementById('js-navbar-toggle')
 
